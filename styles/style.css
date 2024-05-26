@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    padding: 100px;
+}
+
+.board-game{
+    background-color: rgb(211, 233, 255);
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.sidebar{
+    padding: 20px;
+}
+
+img{
+    width: 50px ;
+}
+
+div{
+    background-size: cover;
+    background-position: center;
+}
+
+.inventory{
+    width: 100px;
+    height: 100px;
+}
+
+/* items */
+[data-type="Leaves"]{
+    background-image: url('../assets/images/41034.jpg');
+}
+[data-type="Trunk"]{
+    background-image: url('../assets/images/fs6a_051z_220609.jpg');
+}
+
+[data-type="Rock"]{
+    border: 1px solid black;
+    background-image: url('../assets/images/rock.jpg');
+}
+
+[data-type="Dirt"]{
+    background-image: url('../assets/images/earth.jpg');
+}
+
+/* tools */
+[data-tool="Axe"]{
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/images/axe.png');
+}
+[data-tool="Pickaxe"]{
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/images/OPMI0K0.jpg');
+}
+[data-tool="Shovel"]{
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/images/OPMI0K0.jpg');
+}
+
+
